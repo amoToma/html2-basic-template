@@ -1,0 +1,16 @@
+@media (max-width: $mobile-width-only) {
+  .navigation--closed {
+    display: none;
+  }
+
+
+  .navigation--opened {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    background-color: $background-light;
+    width: 100%;
+    z-index: 10;
+  }
+}

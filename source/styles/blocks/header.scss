@@ -1,5 +1,20 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.header__navigation {
+  @media (min-width: $tablet-width) {
+
+  }
 }

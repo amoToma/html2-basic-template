@@ -1,0 +1,50 @@
+
+
+.logo__link {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  height: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: max-content;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    height: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+  }
+}
+
+.logo__image {
+  width: 32px;
+  height: 36px;
+
+  @media (min-width: $tablet-width) {
+    width: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+  }
+}
+
+.logo__text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    width: 130px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}

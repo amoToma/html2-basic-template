@@ -1,0 +1,29 @@
+.slider-hero {
+  background-color: $background-special-flat;
+}
+
+.slider-hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-hero__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+}
+
+.slider-hero__intro {
+  color: $brand-color;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.slider-hero__description {
+  text-align: center;
+  line-height: 20px;
+}
