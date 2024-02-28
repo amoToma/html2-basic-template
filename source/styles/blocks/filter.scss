@@ -1,0 +1,93 @@
+.filter__group {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.filter__radio {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__row {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.filter__checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__title {
+  @include small-title;
+  margin-bottom: 20px;
+}
+
+.filter__radio-marker {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: solid 2px $neutral-base;
+  position: relative;
+}
+
+.filter__radio-input[type="radio"]:checked + .filter__radio-marker {
+  border: solid 2px $brand-color;
+}
+
+.filter__radio-input[type="radio"]:checked + .filter__radio-marker::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $brand-color;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.filter__checkbox-marker {
+  width: 42px;
+  height: 24px;
+  border-radius: 12px;
+  border: none;
+  background-color: $neutral-base;
+  position: relative;
+}
+
+.filter__checkbox-marker::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: $background-light;
+  top: 50%;
+  left: 2px;
+  transform: translate(0, -50%);
+  transition: all .2s;
+}
+
+.filter__checkbox-input[type="checkbox"]:checked + .filter__checkbox-marker {
+  background-color: $brand-color;
+
+}
+
+.filter__checkbox-input[type="checkbox"]:checked + .filter__checkbox-marker::before {
+  left: 20px;
+}
+
+.filter__button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+

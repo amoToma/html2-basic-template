@@ -1,0 +1,38 @@
+.slider-pagination__link {
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 62px;
+    height: 4px;
+    background-color: $background-light;
+
+    &--curent {
+      background-color: $brand-color;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $brand-color-extra-light;
+    }
+
+    &:active {
+      background-color: $brand-color;
+    }
+  }
+}
+
+.slider-pagination {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding-bottom: 70px;
+    gap: 8px;
+    max-width: 360px;
+    flex-wrap: wrap;
+
+
+  }
+}
+
+
