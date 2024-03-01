@@ -1,0 +1,128 @@
+.footer {
+  min-width: 320px;
+}
+
+.footer__connainer {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 1400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.footer__navigation {
+  @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 223px 223px 223px;
+      column-gap: 30px;
+      width: 768px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 318px 318px 318px;
+  }
+}
+
+.footer__link__container-content {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    width: 318px;
+    gap: 50px;
+  }
+}
+
+.footer__link__container,
+.footer__navigation__container {
+  border-bottom: 1px solid $brand-color-extra-light;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.footer__navigation__container{
+  padding-top: 20px;
+  padding-bottom: 8px;
+}
+
+.footer__navigation__list {
+  @include list;
+}
+
+.footer__navigation__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $brand-color;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.footer__navigation__item {
+  margin-bottom: 20px;
+}
+
+.footer__navigation__link {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.footer__navigation__contact {
+  line-height: 20px;
+  color: $text-content;
+  margin: 0;
+  padding-left: 19px;
+
+  &--address {
+    background-image: url("../../images/icon-address.svg");
+    background-repeat: no-repeat;
+    background-size: 13px 16px;
+    background-position: top 2px left 0;
+  }
+
+  &--phone {
+    background-image: url("../../images/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-size: 13px 16px;
+    background-position: top 2px left 0;
+  }
+}
+
+.footer__copyright {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 3px;
+}
+
+.footer__copyright__text {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $neutral-base;
+}
+
+.footer__copyright__icon {
+  fill: $neutral-base;
+}
+
+.footer__copyright__link {
+  display: flex;
+  gap: 4px;
+}

@@ -98,6 +98,11 @@
     margin-bottom: 40px;
     justify-content: center;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .filter__button {
@@ -113,6 +118,12 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 30px;
     margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    width: 318px;
   }
 }
 

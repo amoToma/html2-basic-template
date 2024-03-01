@@ -7,14 +7,9 @@
 
 .header {
   position: relative;
+  min-width: 320px;
 
   @media (min-width: $tablet-width) {
     display: flex;
-  }
-}
-
-.header__navigation {
-  @media (min-width: $tablet-width) {
-
   }
 }

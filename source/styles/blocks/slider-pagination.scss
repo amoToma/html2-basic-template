@@ -6,10 +6,6 @@
     height: 4px;
     background-color: $background-light;
 
-    &--curent {
-      background-color: $brand-color;
-    }
-
     &:hover,
     &:focus {
       background-color: $brand-color-extra-light;
@@ -21,16 +17,22 @@
   }
 }
 
+.slider-pagination__link--curent {
+  background-color: $brand-color;
+}
+
 .slider-pagination {
   display: none;
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
     display: flex;
-    padding-bottom: 70px;
     gap: 8px;
     max-width: 360px;
     flex-wrap: wrap;
-
+    transform: translate(-50%, 0px);
 
   }
 }

@@ -18,6 +18,18 @@
   }
 }
 
+.logo__link--footter {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: 66px;
+    justify-content: space-between;
+    margin-right: 0;
+    padding-top: 20px;
+  }
+}
+
 .logo__image {
   width: 32px;
   height: 36px;
@@ -28,6 +40,19 @@
 
   @media (min-width: $desktop-width) {
     width: 170px;
+  }
+}
+
+.logo__image--footer {
+  width: 82px;
+  height: 36px;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+  }
+
+  @media (min-width: $desktop-width) {
+
   }
 }
 
@@ -46,5 +71,16 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+
+  .logo--footer {
+    align-items: start;
+    flex-direction: column;
+  }
+}
+
+.logo__text--footer {
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }

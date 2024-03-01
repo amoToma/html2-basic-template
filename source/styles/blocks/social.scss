@@ -1,0 +1,21 @@
+.social {
+  @include list;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+  }
+}
+
+.social__link {
+  display: block;
+  padding: 10px;
+}
+
+.social__link__icon {
+  width: 20px;
+  height: 20px;
+}
