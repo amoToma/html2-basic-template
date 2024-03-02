@@ -1,10 +1,12 @@
-
-
 .logo__link {
   display: block;
   padding-top: 12px;
   padding-bottom: 12px;
   height: 60px;
+
+  &:hover {
+    transform: scale(1.03);
+  }
 
   @media (min-width: $tablet-width) {
     width: max-content;
@@ -50,10 +52,6 @@
   @media (min-width: $tablet-width) {
     width: 170px;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .logo__text {
@@ -66,14 +64,16 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .logo {
+.logo {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
+}
 
-  .logo--footer {
+.logo--footer {
+  @media (min-width: $desktop-width) {
     align-items: start;
     flex-direction: column;
   }

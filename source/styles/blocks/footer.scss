@@ -44,7 +44,7 @@
 }
 
 .footer__link__container,
-.footer__navigation__container {
+.footer__navigation-container {
   border-bottom: 1px solid $brand-color-extra-light;
 
   @media (min-width: $tablet-width) {
@@ -52,16 +52,16 @@
   }
 }
 
-.footer__navigation__container{
+.footer__navigation-container {
   padding-top: 20px;
   padding-bottom: 8px;
 }
 
-.footer__navigation__list {
+.footer__navigation-list {
   @include list;
 }
 
-.footer__navigation__title {
+.footer__navigation-title {
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
@@ -70,15 +70,16 @@
   margin-bottom: 20px;
 }
 
-.footer__navigation__item {
+.footer__navigation-item {
   margin-bottom: 20px;
 }
 
-.footer__navigation__link {
+.footer__navigation-link {
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
   text-transform: uppercase;
+  color: $text-content;
 }
 
 .footer__navigation__contact {
