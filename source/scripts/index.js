@@ -1,5 +1,6 @@
 import { toggleNavigationMenu } from './menu';
 import { showSlide, showActiveSlide } from './slider';
+import './range.js';
 
 toggleNavigationMenu();
 showSlide(0);
@@ -63,21 +64,4 @@ showActiveSlide(0);
 //   });
 // });
 
-const sliderRange = document.querySelector('.fange__slider-container');
-const inputMin = document.querySelector('.range__min-price');
-const inputMax = document.querySelector('.range__max-price');
-const inputs = [inputMin, inputMax];
 
-noUiSlider.create(sliderRange, {
-  range: {
-    min: 0,
-    max: 1000,
-  },
-  start: [0, 900],
-  step: 50,
-  connect: true,
-});
-
-sliderRange.noUiSlider.on('update', (values, handle) => {
-  inputs[handle].value = values[handle];
-});

@@ -1,0 +1,50 @@
+.noUi-target {
+  border: none;
+  border-radius: 0;
+  height: 4px;
+  box-shadow: none;
+}
+
+.noUi-base {
+  height: 2px;
+  background-color: $neutral-base-light;
+  top: 1px;
+}
+
+.noUi-connects {
+  border: none;
+  border-radius: none;
+  height: 4px;
+  top: -1px;
+}
+
+.noUi-connect {
+  background-color: $brand-color;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 24px;
+  height: 24px;
+  top: -11px;
+  right: -24px;
+
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+
+.noUi-handle {
+  border-radius: 50%;
+  box-shadow: none;
+  border: 2px solid $brand-color;
+
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+
+.noUi-handle-upper {
+  left: calc(100% - 24px);
+}

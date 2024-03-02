@@ -1,23 +1,24 @@
-.slider-pagination__link {
-
+.slider-pagination__button {
   @media (min-width: $desktop-width) {
     display: block;
     width: 62px;
     height: 4px;
     background-color: $background-light;
+    border: none;
 
-    &:hover,
-    &:focus {
+    // &:focus {
+    //   background-color: $brand-color-extra-light;
+    // }
+    &:hover {
       background-color: $brand-color-extra-light;
     }
-
     &:active {
       background-color: $brand-color;
     }
   }
 }
 
-.slider-pagination__link--curent {
+.slider-pagination__button--curent {
   background-color: $brand-color;
 }
 

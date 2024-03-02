@@ -184,15 +184,15 @@
         </button>
 
         <div class="slider-hero__pagination slider-pagination">
-          <a class="slider-pagination__link ">
+          <button class="slider-pagination__button" type="button">
             <span class="visually-hidden">Первый слайд.</span>
-          </a>
-          <a class="slider-pagination__link">
+          </button>
+          <button class="slider-pagination__button" type="button">
             <span class="visually-hidden">Второй слайд.</span>
-          </a>
-          <a class="slider-pagination__link">
+          </button>
+          <button class="slider-pagination__button" type="button">
             <span class="visually-hidden">Третий слайд.</span>
-          </a>
+          </button>
         </div>
       </section>
 
@@ -248,25 +248,23 @@
           <div class="catalog__content-container">
             <form class="catalog__filter filter" action="/" method="get">
               <div class="filter__container">
-
                 <fieldset class="filter__group filter__price">
-
                   <div class="filter__price__range range">
-                    <label class="range__label">Цена</label>
-                    <div class="fange__slider-container">
-                      <div class="range__slider" id="range-price"></div>
+                    <h3 class="range__title">Цена</h3>
+                    <div class="range__container">
+                      <div class="range__slider-container">
+                        <div class="range__slider" id="range-price"></div>
+                      </div>
                     </div>
 
                     <div class="range__price-container">
                       <label class="visually-hidden" for="min-input">От</label>
-                      <input class="range__min-price" type="number" min="0" name="min-price" placeholder="0" id="min-input">
+                      <input class="range__input range__input--min-price" type="number" min="0" name="min-price" placeholder="0" id="min-input">
+
                       <label class="visually-hidden" for="max-input">До</label>
-                      <input class="range__max-price" type="number" name="max-price" placeholder="900" id="max-input">
+                      <input class="range__input range__input--max-price" type="number" name="max-price" placeholder="900" id="max-input">
                     </div>
-
-
                   </div>
-
                 </fieldset>
 
                 <fieldset class="filter__group filter__radio">
@@ -274,7 +272,7 @@
                     Наличие молока
                   </h3>
                   <label class="filter__row filter__row--radio">
-                    <input class="visually-hidden filter__radio-input" type="radio" name="target" value="no-matter">
+                    <input class="visually-hidden filter__radio-input" type="radio" name="target" value="no-matter" checked>
                     <span class="filter__radio-marker"></span>
                     <span class="filter__label filter__label--radio">Неважно</span>
                   </label>
@@ -289,7 +287,7 @@
                     <span class="filter__label filter__label--radio">Только растительное</span>
                   </label>
                   <label class="filter__row filter__row--radio">
-                    <input class="visually-hidden filter__radio-input" type="radio" name="target" value="milk-free">
+                    <input class="visually-hidden filter__radio-input" type="radio" name="target" value="milk-free" disabled>
                     <span class="filter__radio-marker"></span>
                     <span class="filter__label filter__label--radio">Без молока</span>
                   </label>
@@ -300,7 +298,7 @@
                     Страна произрастания
                   </h3>
                   <label class="filter__row filter__row--checkbox">
-                    <input class="visually-hidden filter__checkbox-input" type="checkbox" name="target" value="Brazil">
+                    <input class="visually-hidden filter__checkbox-input" type="checkbox" name="target" value="Brazil" checked>
                     <span class="filter__checkbox-marker"></span>
                     <span class="filter__label filter__label--checkbox">Бразилия</span>
                   </label>
@@ -320,7 +318,7 @@
                     <span class="filter__label filter__label--checkbox">Коста-Рика</span>
                   </label>
                   <label class="filter__row filter__row--checkbox">
-                    <input class="visually-hidden filter__checkbox-input" type="checkbox" name="target" value="Peru">
+                    <input class="visually-hidden filter__checkbox-input" type="checkbox" name="target" value="Peru" disabled>
                     <span class="filter__checkbox-marker"></span>
                     <span class="filter__label filter__label--checkbox">Перу</span>
                   </label>
@@ -352,9 +350,11 @@
                       <img class="catalog-card__image" src="images/card-photo-white@1x.png" srcset="images/card-photo-white@2x.png 2x" alt="Декаф флэт уайт" width="130" height="188">
                     </picture>
                   </a>
-                  <h3 class="catalog-card__title">
-                    Декаф флэт уайт
-                  </h3>
+                  <a class="catalog-card__title-link">
+                    <h3 class="catalog-card__title">
+                      Декаф флэт уайт
+                    </h3>
+                  </a>
                   <p class="catalog-card__description">
                     Кофе без кофеина из Эфиопии
                     с&nbsp;натуральным фермерским молоком
