@@ -5,12 +5,11 @@
   flex-direction: column;
 
   &:hover {
-
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
   }
 
   @media (min-width: $tablet-width) {
     padding: 50px 30px 30px;
-
   }
 }
 
@@ -20,7 +19,6 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 10px;
-
   }
 }
 
@@ -58,7 +56,6 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
-
   }
 }
 

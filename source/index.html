@@ -5,7 +5,6 @@
     <title>Drinc2Go</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <script src="vendor/nouislider/nouislider.js"></script>
-    <link rel="stylesheet" href="vendor/nouislider/nouislider.css">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
@@ -28,7 +27,7 @@
         <nav class="header__navigation navigation navigation--closed">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="/">Главная</a>
+              <a class="navigation__link" href="/" aria-current="page">Главная</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="/">Каталог</a>
@@ -330,7 +329,7 @@
 
               <div class="filter__button-container">
                 <button class="filter__button button" type="submit">Применить</button>
-                <button class="filter__button button button--reset " type="reset">Сбросить</button>
+                <button class="filter__button button button--reset" type="reset">Сбросить</button>
               </div>
             </form>
 
@@ -344,20 +343,18 @@
                   <option value="default">По убыванию цены</option>
                 </select>
               </div>
-              <ul class="catalog__card__list catalog-card">
+
+              <ul class="catalog__card-list catalog-card">
                 <li class="catalog-card__item">
                   <a class="catalog-card__image-link" href="/">
                     <picture>
                       <source type="image/webp" src="images/card-photo-white@1x.webp 1x" srcset="images/card-photo-white@2x.webp 2x" width="130" height="188">
-
                       <img class="catalog-card__image" src="images/card-photo-white@1x.png" srcset="images/card-photo-white@2x.png 2x" alt="Декаф флэт уайт" width="130" height="188">
                     </picture>
                   </a>
-                  <a class="catalog-card__title-link">
                     <h3 class="catalog-card__title">
                       Декаф флэт уайт
                     </h3>
-                  </a>
                   <p class="catalog-card__description">
                     Кофе без кофеина из Эфиопии
                     с&nbsp;натуральным фермерским молоком
@@ -372,7 +369,6 @@
                   <a class="catalog-card__image-link" href="/">
                     <picture>
                       <source type="image/webp" src="images/card-photo-lavander@1x.webp 1x" srcset="images/card-photo-lavander@2x.webp 2x" width="130" height="188">
-
                       <img class="catalog-card__image" src="images/card-photo-lavander@1x.png" srcset="images/card-photo-lavander@2x.png 2x" alt="Декаф флэт уайт" width="130" height="188">
                     </picture>
                   </a>
@@ -393,7 +389,6 @@
                   <a class="catalog-card__image-link" href="/">
                     <picture>
                       <source type="image/webp" src="images/card-photo-black@1x.webp 1x" srcset="images/card-photo-black@2x.webp 2x" width="130" height="188">
-
                       <img class="catalog-card__image" src="images/card-photo-black@1x.png" srcset="images/card-photo-black@2x.png 2x" alt="Декаф флэт уайт" width="130" height="188">
                     </picture>
                   </a>
@@ -414,7 +409,6 @@
                   <a class="catalog-card__image-link" href="/">
                     <picture>
                       <source type="image/webp" src="images/card-photo-pink@1x.webp 1x" srcset="images/card-photo-pink@2x.webp 2x" width="130" height="188">
-
                       <img class="catalog-card__image" src="images/card-photo-pink@1x.png" srcset="images/card-photo-pink@2x.png 2x" alt="Декаф флэт уайт" width="130" height="188">
                     </picture>
                   </a>
@@ -435,7 +429,6 @@
                   <a class="catalog-card__image-link" href="/">
                     <picture>
                       <source type="image/webp" src="images/card-photo-brown@1x.webp 1x" srcset="images/card-photo-brown@2x.webp 2x" width="130" height="188">
-
                       <img class="catalog-card__image" src="images/card-photo-brown@1x.png" srcset="images/card-photo-brown@2x.png 2x" alt="Декаф флэт уайт" width="130" height="188">
                     </picture>
                   </a>
@@ -456,7 +449,6 @@
                   <a class="catalog-card__image-link" href="/">
                     <picture>
                       <source type="image/webp" src="images/card-photo-yellow@1x.webp 1x" srcset="images/card-photo-yellow@2x.webp 2x" width="130" height="188">
-
                       <img class="catalog-card__image" src="images/card-photo-yellow@1x.png" srcset="images/card-photo-yellow@2x.png 2x" alt="Декаф флэт уайт" width="130" height="188">
                     </picture>
                   </a>
