@@ -15,12 +15,53 @@
   min-width: 40px;
   min-height: 40px;
   border: none;
-
   background-color: $background-light;
   border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background-color: $brand-color-medium;
+    color: $text-content-light;
+  }
+
+  &:active {
+    background-color: $brand-color-dark;
+    color: $text-content-light;
+  }
+
+  &:disabled {
+    background-color: $neutral-base-light;
+    color: $text-content-light;
+  }
+
+  &:hover .pagination__button-text,
+  &:focus .pagination__button-text {
+    color: $text-content-light;
+  }
+
+  &:active .pagination__button-text {
+    color: $text-content-light;
+  }
+
+  &:disabled .pagination__button-text {
+    color: $text-content-light;
+  }
+
+  &:hover .pagination__button-icon,
+  &:focus .pagination__button-icon {
+    fill: $text-content-light;
+  }
+
+  &:active .pagination__button-icon {
+    fill: $text-content-light;
+  }
+
+  &:disabled .pagination__button-icon {
+    fill: $text-content-light;
+  }
 }
 
-.pagination__button--link {
+.pagination__button-link {
   font-size: 16px;
   line-height: 24px;
   color: $brand-color;
@@ -30,9 +71,14 @@
   padding-top: 8px;
   padding-bottom: 8px;
   flex-wrap: wrap;
+
+  &--current {
+    background-color: transparent;
+    color: $text-content;
+  }
 }
 
-.pagination__button__icon {
+.pagination__button-icon {
   fill: $brand-color;
 
   @media (min-width: $tablet-width) {
@@ -40,7 +86,7 @@
   }
 }
 
-.pagination__button__text {
+.pagination__button-text {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -52,5 +98,3 @@
     padding-left: 20px;
   }
 }
-
-

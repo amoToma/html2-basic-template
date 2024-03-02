@@ -13,9 +13,28 @@
 .social__link {
   display: block;
   padding: 10px;
+
+  &:hover,
+  &:focus {
+    border-radius: 4px;
+    background-color: $brand-color-extra-light;
+  }
+
+  &:active {
+    border-radius: 4px;
+    background-color: $brand-color-light;
+  }
+
+  &:hover .social__link-icon,
+  &:focus .social__link-icon {
+    fill: $brand-color;
+  }
+
+
 }
 
-.social__link__icon {
+.social__link-icon {
   width: 20px;
   height: 20px;
+  fill: $neutral-base;
 }
