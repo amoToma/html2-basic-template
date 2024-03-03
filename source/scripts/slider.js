@@ -20,26 +20,26 @@ const showSlide = (num) => {
   });
 };
 
-function showActiveSlide(index) {
+const showActiveSlide = (index) => {
   sliderBattons.forEach((item) => item.classList.remove('slider-pagination__button--curent'));
   sliderBattons[index].classList.add('slider-pagination__button--curent');
-}
+};
 
-function onNextButtonClick() {
+const onNextButtonClick = () => {
   if (slideIndex < slideCount - 1) {
     slideIndex++;
   }
   showSlide(slideIndex);
   showActiveSlide(slideIndex);
-}
+};
 
-function onPrevButtonClick() {
+const onPrevButtonClick = () => {
   if (slideIndex > 0) {
     slideIndex--;
   }
   showSlide(slideIndex);
   showActiveSlide(slideIndex);
-}
+};
 
 showSlide(0);
 showActiveSlide(0);

@@ -75,16 +75,6 @@
     &--current {
       color: $brand-color;
       position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background-color: $brand-color;
-        bottom: 0;
-        left: 0;
-      }
     }
   }
 
@@ -95,5 +85,17 @@
   @media (min-width: $desktop-width) {
     padding-right: 25px;
     padding-left: 22px;
+  }
+}
+
+.navigation__link--current::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: $brand-color;
+    bottom: 0;
+    left: 0;
   }
 }
