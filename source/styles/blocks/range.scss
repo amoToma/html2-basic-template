@@ -4,7 +4,6 @@
   margin: 0;
 }
 
-/* Firefox */
 .range__input[type=number] {
   -moz-appearance: textfield;
 }
@@ -79,5 +78,4 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 22px;
   }
-
 }

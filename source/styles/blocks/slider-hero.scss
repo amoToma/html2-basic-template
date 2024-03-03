@@ -1,13 +1,6 @@
 .slider-hero {
-position: relative;
+  position: relative;
   min-width: 320px;
-
-
-
-  @media (min-width: $desktop-width) {
-
-
-  }
 }
 
 .slider-hero__item {
@@ -60,7 +53,6 @@ position: relative;
   padding-top: 20px;
   padding-bottom: 60px;
 
-
   @media (min-width: $tablet-width) {
     padding-top: 60px;
     padding-bottom: 0;
@@ -86,8 +78,6 @@ position: relative;
   @media (min-width: $desktop-width) {
     align-items: start;
   }
-
-
 }
 
 .slider-hero__title {
@@ -155,7 +145,7 @@ position: relative;
     background: linear-gradient(to right, rgba(120, 89, 207, 0.25), rgba(120, 89, 207, 0));
   }
 
-  &:disabled {
+  &:disabled .slider-hero__button-icon  {
     fill: $neutral-base;
   }
 
@@ -179,18 +169,13 @@ position: relative;
   &:active {
     background: linear-gradient(to left, rgba(120, 89, 207, 0.25), rgba(120, 89, 207, 0));
   }
-
-  &:disabled {
-    fill: $neutral-base;
-  }
 }
 
-.slider-hero__button-previous__prev {
+.slider-hero__button-icon {
   fill: $brand-color;
 }
 
-
-.slider-hero__image__container {
+.slider-hero__image-container {
   @media (min-width: $tablet-width) {
     order: 1;
   }

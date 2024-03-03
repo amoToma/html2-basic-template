@@ -64,6 +64,7 @@
 }
 
 .catalog__select {
+  position: relative;
   border: none;
   border-radius: 4px;
   background-color: transparent;
@@ -88,25 +89,15 @@
     background-color: $brand-color-extra-light;
   }
 
-  &:active .catalog__select-window::before {
-    transform: rotate(-180deg);
+  &:active + .catalog__select-icon {
+    transform: rotate(180deg);
   }
 }
 
-.catalog__select-window {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-image: url("../../images/select-icon.svg");
-    background-repeat: no-repeat;
-    background-size: 10px 10px;
-    top: 11px;
-    right: 10px;
-  }
+.catalog__select-icon {
+  position: absolute;
+  pointer-events: none;
+  right: 10px;
 }
 
 .catalog__card-list {
@@ -129,6 +120,3 @@
     margin-bottom: 60px;
   }
 }
-
-
-

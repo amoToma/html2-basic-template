@@ -15,13 +15,17 @@
   display: flex;
 }
 
+.header-menu__icon {
+  fill: $text-content;
+}
+
 .header-menu__link {
   display: block;
   padding: 20px 22px;
 
-  & .header-menu__icon {
-    fill: $text-content;
-  }
+  &:active {
+    background-color: $brand-color-extra-light;
+    }
 
   @media (min-width: $tablet-width) {
     padding: 30px 22px;
@@ -48,7 +52,6 @@
     &:active .header-menu__icon {
       fill: $brand-color;
     }
-
   }
 
   &:active {
@@ -72,6 +75,3 @@
     display: none;
   }
 }
-
-
-
