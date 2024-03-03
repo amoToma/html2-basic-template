@@ -1,7 +1,8 @@
 .pagination {
+  @include list;
+
   display: flex;
   justify-content: space-between;
-  @include list;
   align-items: center;
 
   @media (min-width: $tablet-width) {

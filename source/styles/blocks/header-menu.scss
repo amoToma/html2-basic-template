@@ -25,7 +25,7 @@
 
   &:active {
     background-color: $brand-color-extra-light;
-    }
+  }
 
   @media (min-width: $tablet-width) {
     padding: 30px 22px;
@@ -53,10 +53,6 @@
       fill: $brand-color;
     }
   }
-
-  &:active {
-    background-color: $brand-color-extra-light;
-  }
 }
 
 .header-menu__burger {
@@ -65,7 +61,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  padding: 22px 22px;
+  padding: 22px;
 
   &:active {
     background-color: $brand-color-extra-light;

@@ -14,11 +14,11 @@
   background-color: $text-content;
   width: 16px;
   height: 1.5px;
-  top: -5px
+  top: -5px;
 }
 
 .burger--closed .burger__line::after {
-  top: 5px
+  top: 5px;
 }
 
 .burger--opened .burger__line {
@@ -37,10 +37,7 @@
   background-color: $text-content;
   width: 16px;
   height: 1.5px;
-  top: -5px;
   transform: rotate(90deg);
   top: 0;
   right: 0;
 }
-
-

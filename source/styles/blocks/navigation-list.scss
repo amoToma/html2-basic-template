@@ -4,7 +4,6 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-
   }
 }
 
@@ -24,7 +23,8 @@
     width: max-content;
     padding: 32px 20px;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: $brand-color;
     }
 
@@ -32,7 +32,6 @@
       background-color: $brand-color-extra-light;
       color: $brand-color;
     }
-
   }
 
   &:active {
@@ -42,16 +41,16 @@
 
 .navigation-list__item {
   border-top: 1px solid $brand-color-extra-light;
+
   @media (min-width: $tablet-width) {
     border: none;
   }
+
   &:last-child {
     border-bottom: 1px solid $brand-color-extra-light;
 
     @media (min-width: $tablet-width) {
       border: none;
+    }
   }
-
-}}
-
-
+}

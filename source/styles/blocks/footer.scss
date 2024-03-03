@@ -15,14 +15,14 @@
 
 .footer__navigation {
   @media (min-width: $tablet-width) {
-      display: grid;
-      grid-template-columns: 223px 223px 223px;
-      column-gap: 30px;
-      width: 768px;
-      padding-left: 20px;
-      padding-right: 20px;
-      margin-left: auto;
-      margin-right: auto;
+    display: grid;
+    grid-template-columns: 223px 223px 223px;
+    column-gap: 30px;
+    width: 768px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: $desktop-width) {
