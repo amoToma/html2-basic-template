@@ -12,12 +12,15 @@
 }
 
 .pagination__button {
-  display: block;
+  display: flex;
   min-width: 40px;
   min-height: 40px;
   border: none;
   background-color: $background-light;
   border-radius: 4px;
+  padding: 8px;
+  align-items: center;
+  justify-content: center;
 
   &:hover,
   &:focus {

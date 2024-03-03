@@ -1,11 +1,11 @@
 .range__input::-webkit-outer-spin-button,
 .range__input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
-.range__input[type=number] {
-  -moz-appearance: textfield;
+.range__input[type="number"] {
+  appearance: textfield;
 }
 
 .range {
