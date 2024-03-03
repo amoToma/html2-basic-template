@@ -7,7 +7,7 @@ if (sliderRange) {
   noUiSlider.create(sliderRange, {
     range: {
       min: 0,
-      max: 1000,
+      max: 970,
     },
     start: [0, 900],
     step: 1,

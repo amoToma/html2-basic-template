@@ -3,6 +3,14 @@
   min-width: 320px;
 }
 
+.catalog__filter {
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
 .catalog__container {
   display: flex;
   flex-direction: column;
@@ -36,7 +44,11 @@
 .catalog__title {
   @include medium-title;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 18px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 36px;
@@ -53,7 +65,7 @@
   @media (min-width: $tablet-width) {
     justify-content: end;
     gap: 10px;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
 }
 
@@ -61,6 +73,7 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
+  padding-left: 3px;
 }
 
 .catalog__select {
@@ -68,13 +81,14 @@
   border: none;
   border-radius: 4px;
   background-color: transparent;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
   text-transform: lowercase;
   color: $brand-color;
   width: 165px;
-  padding: 4px 25px 4px 10px;
+  padding: 4px 25px 4px 13px;
   height: 32px;
   -webkit-apperance: none;
   appearance: none;
@@ -96,7 +110,7 @@
 .catalog__select-icon {
   position: absolute;
   pointer-events: none;
-  right: 10px;
+  right: 7px;
 }
 
 .catalog__card-list {
@@ -109,8 +123,8 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin-bottom: 70px;
+    gap: 29px;
+    margin-bottom: 71px;
   }
 
   @media (min-width: $desktop-width) {

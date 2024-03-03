@@ -82,5 +82,7 @@
 .logo__text--footer {
   @media (min-width: $desktop-width) {
     width: 100%;
+    font-size: 14px;
+    line-height: 20px;
   }
 }

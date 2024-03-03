@@ -4,6 +4,12 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  flex-wrap: wrap;
+  max-width: 160px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 400px;
+  }
 
   @media (min-width: $desktop-width) {
     justify-content: start;

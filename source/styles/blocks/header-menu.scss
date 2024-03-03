@@ -13,6 +13,12 @@
 
 .header-menu {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 240px;
+
+  @media (min-width: $desktop-width) {
+    gap: 17px;
+  }
 }
 
 .header-menu__icon {
@@ -20,7 +26,8 @@
 }
 
 .header-menu__link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 20px 22px;
 
   &:active {
