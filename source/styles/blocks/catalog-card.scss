@@ -3,7 +3,7 @@
   border-radius: 4px;
   padding: 40px 20px 20px;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 
   &:hover {
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
@@ -70,5 +70,5 @@
 
 .catalog-card__image {
   width: 130px;
-  height: 188px;
+  min-height: 188px;
 }
