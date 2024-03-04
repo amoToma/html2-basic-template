@@ -27,6 +27,7 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -40,7 +41,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    gap: 23px;
+    gap: 30px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -104,14 +105,10 @@
     padding: 76px 0 0;
     text-align: center;
     background-position: top center;
+    width: 317px;
 
     &--comfort {
-      padding-left: 15px;
       background-position: top left 139px;
-    }
-
-    &--cheerfulness {
-      padding-left: 3px;
     }
   }
 
