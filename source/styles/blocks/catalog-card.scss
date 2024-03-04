@@ -12,6 +12,12 @@
   @media (min-width: $tablet-width) {
     padding: 51px 30px 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    &.loaded {
+      box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
 }
 
 .catalog-card__title {

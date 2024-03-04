@@ -45,34 +45,34 @@
   border-radius: 50%;
   border: solid 2px $neutral-base;
   position: relative;
+}
 
-  .filter__radio-input[type="radio"]:hover + & {
-    border-color: $brand-color-medium;
-    background-color: #ddd5f3;
-    box-shadow: inset 0 0 0 2px $background-light;
-  }
+.filter__radio-input[type="radio"]:hover + .filter__radio-marker {
+  border-color: $brand-color-medium;
+  background-color: #ddd5f3;
+  box-shadow: inset 0 0 0 2px $background-light;
+}
 
-  .filter__radio-input[type="radio"]:checked + & {
-    border: solid 2px $brand-color;
-    background-color: $brand-color;
-    box-shadow: inset 0 0 0 2px $background-light;
-  }
+.filter__radio-input[type="radio"]:checked + .filter__radio-marker {
+  border: solid 2px $brand-color;
+  background-color: $brand-color;
+  box-shadow: inset 0 0 0 2px $background-light;
+}
 
-  .filter__radio-input[type="radio"]:disabled + & {
-    border-color: $neutral-base-light;
-    background-color: $background-medium;
-  }
+.filter__radio-input[type="radio"]:disabled + .filter__radio-marker {
+  border-color: $neutral-base-light;
+  background-color: $background-medium;
+}
 
-  .filter__radio-input[type="radio"]:checked:disabled + & {
-    border-color: $neutral-base-light;
-    background-color: $neutral-base-light;
-    box-shadow: inset 0 0 0 2px $background-medium;
-  }
+.filter__radio-input[type="radio"]:checked:disabled + .filter__radio-marker {
+  border-color: $neutral-base-light;
+  background-color: $neutral-base-light;
+  box-shadow: inset 0 0 0 2px $background-medium;
+}
 
-  .filter__radio-input[type="radio"]:hover:disabled + & {
-    box-shadow: none;
-    background-color: $background-medium;
-  }
+.filter__radio-input[type="radio"]:hover:disabled + .filter__radio-marker {
+  box-shadow: none;
+  background-color: $background-medium;
 }
 
 .filter__radio-input[type="radio"]:disabled + .filter__label--radio {
@@ -90,34 +90,34 @@
   border: none;
   background-color: $neutral-base;
   position: relative;
+}
 
-  .filter__checkbox-input[type="checkbox"]:hover + & {
-    box-shadow: inset 0 0 0 2px $brand-color-medium;
-    background-color: $brand-color-light;
+.filter__checkbox-input[type="checkbox"]:hover + .filter__checkbox-marker {
+  box-shadow: inset 0 0 0 2px $brand-color-medium;
+  background-color: $brand-color-light;
+}
+
+.filter__checkbox-input[type="checkbox"]:checked + .filter__checkbox-marker {
+  background-color: $brand-color;
+}
+
+.filter__checkbox-input[type="checkbox"]:disabled + .filter__checkbox-marker {
+  background-color: $neutral-base-light;
+
+  &::before {
+    background-color: $background-medium;
   }
+}
 
-  .filter__checkbox-input[type="checkbox"]:checked + & {
-    background-color: $brand-color;
-  }
+.filter__checkbox-input[type="checkbox"]:hover:disabled + .filter__checkbox-marker {
+  box-shadow: none;
+}
 
-  .filter__checkbox-input[type="checkbox"]:disabled + & {
-    background-color: $neutral-base-light;
+.filter__checkbox-input[type="checkbox"]:checked:disabled + .filter__checkbox-marker {
+  background-color: $neutral-base-light;
 
-    &::before {
-      background-color: $background-medium;
-    }
-  }
-
-  .filter__checkbox-input[type="checkbox"]:hover:disabled + & {
-    box-shadow: none;
-  }
-
-  .filter__checkbox-input[type="checkbox"]:checked:disabled + & {
-    background-color: $neutral-base-light;
-
-    &::before {
-      background-color: $neutral-base;
-    }
+  &::before {
+    background-color: $neutral-base;
   }
 }
 
@@ -132,10 +132,10 @@
   left: 2px;
   transform: translate(0, -50%);
   transition: all 0.2s;
+}
 
-  .filter__checkbox-input[type="checkbox"]:checked + & {
-    left: 20px;
-  }
+.filter__checkbox-input[type="checkbox"]:checked + .filter__checkbox-marker::before {
+  left: 20px;
 }
 
 .filter__button-container {
